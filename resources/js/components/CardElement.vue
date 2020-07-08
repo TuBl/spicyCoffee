@@ -2,7 +2,7 @@
     <div>
         <card class='stripe-card'
               :class='{ complete }'
-              stripe=process.env.STRIPE_SECRET
+              stripe=process.env.MIX_STRIPE_SECRET
               :options='stripeOptions'
               @change='change($event)'
         />
